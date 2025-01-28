@@ -20,21 +20,21 @@ def print_month_calendar(year=2025, month=1, width=2, lines=1):
 
 if __name__ == '__main__':
     while True:
-        print("\nChọn loại lịch:")
-        print("1. Lịch năm")
-        print("2. Lịch tháng")
-        print("0. Thoát")
+        print('Chọn loại lịch:')
+        print('1. Lịch năm')
+        print('2. Lịch tháng')
+        print('0. Thoát')
 
-        choice = input("Nhập lựa chọn: ")
+        choice = input('Nhập lựa chọn: ')
 
         if choice == '1':
             year = int(input('Nhập năm: '))
             print_year_calendar(year)
         elif choice == '2':
             year = int(input('Nhập năm: '))
-            month = int(input("Nhập tháng: "))
+            month = int(input('Nhập tháng: '))
             print_month_calendar(year, month)
         elif choice == '0':
             break
         else:
-            print("Lựa chọn không hợp lệ.")
+            print('Lựa chọn không hợp lệ.')
